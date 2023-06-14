@@ -1,0 +1,48 @@
+C:\Users\김남기\source\repos\image_check_bar\image_check_bar\bin\Debug\net6.0-windows\image_check_bar.exe
+C:\Users\김남기\source\repos\image_check_bar\image_check_bar\bin\Debug\net6.0-windows\image_check_bar.deps.json
+C:\Users\김남기\source\repos\image_check_bar\image_check_bar\bin\Debug\net6.0-windows\image_check_bar.runtimeconfig.json
+C:\Users\김남기\source\repos\image_check_bar\image_check_bar\bin\Debug\net6.0-windows\image_check_bar.dll
+C:\Users\김남기\source\repos\image_check_bar\image_check_bar\bin\Debug\net6.0-windows\image_check_bar.pdb
+C:\Users\김남기\source\repos\image_check_bar\image_check_bar\bin\Debug\net6.0-windows\OpenCvSharp.dll
+C:\Users\김남기\source\repos\image_check_bar\image_check_bar\bin\Debug\net6.0-windows\OpenCvSharp.Extensions.dll
+C:\Users\김남기\source\repos\image_check_bar\image_check_bar\bin\Debug\net6.0-windows\runtimes\win-x64\native\OpenCvSharpExtern.dll
+C:\Users\김남기\source\repos\image_check_bar\image_check_bar\bin\Debug\net6.0-windows\runtimes\win-x64\native\opencv_videoio_ffmpeg470_64.dll
+C:\Users\김남기\source\repos\image_check_bar\image_check_bar\bin\Debug\net6.0-windows\runtimes\win-x86\native\OpenCvSharpExtern.dll
+C:\Users\김남기\source\repos\image_check_bar\image_check_bar\bin\Debug\net6.0-windows\runtimes\win-x86\native\opencv_videoio_ffmpeg470.dll
+C:\Users\김남기\source\repos\image_check_bar\image_check_bar\obj\Debug\net6.0-windows\image_check_bar.csproj.AssemblyReference.cache
+C:\Users\김남기\source\repos\image_check_bar\image_check_bar\obj\Debug\net6.0-windows\image_check_bar.Form1.resources
+C:\Users\김남기\source\repos\image_check_bar\image_check_bar\obj\Debug\net6.0-windows\image_check_bar.csproj.GenerateResource.cache
+C:\Users\김남기\source\repos\image_check_bar\image_check_bar\obj\Debug\net6.0-windows\image_check_bar.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\김남기\source\repos\image_check_bar\image_check_bar\obj\Debug\net6.0-windows\image_check_bar.AssemblyInfoInputs.cache
+C:\Users\김남기\source\repos\image_check_bar\image_check_bar\obj\Debug\net6.0-windows\image_check_bar.AssemblyInfo.cs
+C:\Users\김남기\source\repos\image_check_bar\image_check_bar\obj\Debug\net6.0-windows\image_check_bar.csproj.CoreCompileInputs.cache
+C:\Users\김남기\source\repos\image_check_bar\image_check_bar\obj\Debug\net6.0-windows\image_check_bar.csproj.CopyComplete
+C:\Users\김남기\source\repos\image_check_bar\image_check_bar\obj\Debug\net6.0-windows\image_check_bar.dll
+C:\Users\김남기\source\repos\image_check_bar\image_check_bar\obj\Debug\net6.0-windows\refint\image_check_bar.dll
+C:\Users\김남기\source\repos\image_check_bar\image_check_bar\obj\Debug\net6.0-windows\image_check_bar.pdb
+C:\Users\김남기\source\repos\image_check_bar\image_check_bar\obj\Debug\net6.0-windows\image_check_bar.genruntimeconfig.cache
+C:\Users\김남기\source\repos\image_check_bar\image_check_bar\obj\Debug\net6.0-windows\ref\image_check_bar.dll
+E:\회사\삭도 코드\image_check_bar\image_check_bar\bin\Debug\net6.0-windows\image_check_bar.exe
+E:\회사\삭도 코드\image_check_bar\image_check_bar\bin\Debug\net6.0-windows\image_check_bar.deps.json
+E:\회사\삭도 코드\image_check_bar\image_check_bar\bin\Debug\net6.0-windows\image_check_bar.runtimeconfig.json
+E:\회사\삭도 코드\image_check_bar\image_check_bar\bin\Debug\net6.0-windows\image_check_bar.dll
+E:\회사\삭도 코드\image_check_bar\image_check_bar\bin\Debug\net6.0-windows\image_check_bar.pdb
+E:\회사\삭도 코드\image_check_bar\image_check_bar\bin\Debug\net6.0-windows\OpenCvSharp.dll
+E:\회사\삭도 코드\image_check_bar\image_check_bar\bin\Debug\net6.0-windows\OpenCvSharp.Extensions.dll
+E:\회사\삭도 코드\image_check_bar\image_check_bar\bin\Debug\net6.0-windows\runtimes\win-x64\native\OpenCvSharpExtern.dll
+E:\회사\삭도 코드\image_check_bar\image_check_bar\bin\Debug\net6.0-windows\runtimes\win-x64\native\opencv_videoio_ffmpeg470_64.dll
+E:\회사\삭도 코드\image_check_bar\image_check_bar\bin\Debug\net6.0-windows\runtimes\win-x86\native\OpenCvSharpExtern.dll
+E:\회사\삭도 코드\image_check_bar\image_check_bar\bin\Debug\net6.0-windows\runtimes\win-x86\native\opencv_videoio_ffmpeg470.dll
+E:\회사\삭도 코드\image_check_bar\image_check_bar\obj\Debug\net6.0-windows\image_check_bar.csproj.AssemblyReference.cache
+E:\회사\삭도 코드\image_check_bar\image_check_bar\obj\Debug\net6.0-windows\image_check_bar.Form1.resources
+E:\회사\삭도 코드\image_check_bar\image_check_bar\obj\Debug\net6.0-windows\image_check_bar.csproj.GenerateResource.cache
+E:\회사\삭도 코드\image_check_bar\image_check_bar\obj\Debug\net6.0-windows\image_check_bar.GeneratedMSBuildEditorConfig.editorconfig
+E:\회사\삭도 코드\image_check_bar\image_check_bar\obj\Debug\net6.0-windows\image_check_bar.AssemblyInfoInputs.cache
+E:\회사\삭도 코드\image_check_bar\image_check_bar\obj\Debug\net6.0-windows\image_check_bar.AssemblyInfo.cs
+E:\회사\삭도 코드\image_check_bar\image_check_bar\obj\Debug\net6.0-windows\image_check_bar.csproj.CoreCompileInputs.cache
+E:\회사\삭도 코드\image_check_bar\image_check_bar\obj\Debug\net6.0-windows\image_check_bar.csproj.CopyComplete
+E:\회사\삭도 코드\image_check_bar\image_check_bar\obj\Debug\net6.0-windows\image_check_bar.dll
+E:\회사\삭도 코드\image_check_bar\image_check_bar\obj\Debug\net6.0-windows\refint\image_check_bar.dll
+E:\회사\삭도 코드\image_check_bar\image_check_bar\obj\Debug\net6.0-windows\image_check_bar.pdb
+E:\회사\삭도 코드\image_check_bar\image_check_bar\obj\Debug\net6.0-windows\image_check_bar.genruntimeconfig.cache
+E:\회사\삭도 코드\image_check_bar\image_check_bar\obj\Debug\net6.0-windows\ref\image_check_bar.dll
