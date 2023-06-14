@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "MhKIhpIQq/GGkhUBTx/diAV6/xVCLL0vM30DrGRIk+8GVS1hNkcyv3KjJ6LvsMMlO0eCoHxhPMk1I0Xl5bLabw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\김남기\\source\\repos\\image segment test wire\\image segment test wire\\image segment test wire.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\김남기\\.nuget\\packages\\opencvsharp4\\4.7.0.20230115\\opencvsharp4.4.7.0.20230115.nupkg.sha512",
+    "C:\\Users\\김남기\\.nuget\\packages\\opencvsharp4.runtime.win\\4.7.0.20230115\\opencvsharp4.runtime.win.4.7.0.20230115.nupkg.sha512",
+    "C:\\Users\\김남기\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\김남기\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

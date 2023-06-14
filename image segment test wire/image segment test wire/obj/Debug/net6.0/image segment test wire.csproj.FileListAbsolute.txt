@@ -1,0 +1,21 @@
+C:\Users\김남기\source\repos\image segment test wire\image segment test wire\bin\Debug\net6.0\image segment test wire.exe
+C:\Users\김남기\source\repos\image segment test wire\image segment test wire\bin\Debug\net6.0\image segment test wire.deps.json
+C:\Users\김남기\source\repos\image segment test wire\image segment test wire\bin\Debug\net6.0\image segment test wire.runtimeconfig.json
+C:\Users\김남기\source\repos\image segment test wire\image segment test wire\bin\Debug\net6.0\image segment test wire.dll
+C:\Users\김남기\source\repos\image segment test wire\image segment test wire\bin\Debug\net6.0\image segment test wire.pdb
+C:\Users\김남기\source\repos\image segment test wire\image segment test wire\bin\Debug\net6.0\OpenCvSharp.dll
+C:\Users\김남기\source\repos\image segment test wire\image segment test wire\bin\Debug\net6.0\runtimes\win-x64\native\OpenCvSharpExtern.dll
+C:\Users\김남기\source\repos\image segment test wire\image segment test wire\bin\Debug\net6.0\runtimes\win-x64\native\opencv_videoio_ffmpeg470_64.dll
+C:\Users\김남기\source\repos\image segment test wire\image segment test wire\bin\Debug\net6.0\runtimes\win-x86\native\OpenCvSharpExtern.dll
+C:\Users\김남기\source\repos\image segment test wire\image segment test wire\bin\Debug\net6.0\runtimes\win-x86\native\opencv_videoio_ffmpeg470.dll
+C:\Users\김남기\source\repos\image segment test wire\image segment test wire\obj\Debug\net6.0\image segment test wire.csproj.AssemblyReference.cache
+C:\Users\김남기\source\repos\image segment test wire\image segment test wire\obj\Debug\net6.0\image segment test wire.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\김남기\source\repos\image segment test wire\image segment test wire\obj\Debug\net6.0\image segment test wire.AssemblyInfoInputs.cache
+C:\Users\김남기\source\repos\image segment test wire\image segment test wire\obj\Debug\net6.0\image segment test wire.AssemblyInfo.cs
+C:\Users\김남기\source\repos\image segment test wire\image segment test wire\obj\Debug\net6.0\image segment test wire.csproj.CoreCompileInputs.cache
+C:\Users\김남기\source\repos\image segment test wire\image segment test wire\obj\Debug\net6.0\image segment test wire.csproj.CopyComplete
+C:\Users\김남기\source\repos\image segment test wire\image segment test wire\obj\Debug\net6.0\image segment test wire.dll
+C:\Users\김남기\source\repos\image segment test wire\image segment test wire\obj\Debug\net6.0\refint\image segment test wire.dll
+C:\Users\김남기\source\repos\image segment test wire\image segment test wire\obj\Debug\net6.0\image segment test wire.pdb
+C:\Users\김남기\source\repos\image segment test wire\image segment test wire\obj\Debug\net6.0\image segment test wire.genruntimeconfig.cache
+C:\Users\김남기\source\repos\image segment test wire\image segment test wire\obj\Debug\net6.0\ref\image segment test wire.dll
