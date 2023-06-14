@@ -1,0 +1,21 @@
+C:\Users\김남기\source\repos\merge wire test\merge wire test\bin\Debug\net6.0\merge wire test.exe
+C:\Users\김남기\source\repos\merge wire test\merge wire test\bin\Debug\net6.0\merge wire test.deps.json
+C:\Users\김남기\source\repos\merge wire test\merge wire test\bin\Debug\net6.0\merge wire test.runtimeconfig.json
+C:\Users\김남기\source\repos\merge wire test\merge wire test\bin\Debug\net6.0\merge wire test.dll
+C:\Users\김남기\source\repos\merge wire test\merge wire test\bin\Debug\net6.0\merge wire test.pdb
+C:\Users\김남기\source\repos\merge wire test\merge wire test\bin\Debug\net6.0\OpenCvSharp.dll
+C:\Users\김남기\source\repos\merge wire test\merge wire test\bin\Debug\net6.0\runtimes\win-x64\native\OpenCvSharpExtern.dll
+C:\Users\김남기\source\repos\merge wire test\merge wire test\bin\Debug\net6.0\runtimes\win-x64\native\opencv_videoio_ffmpeg470_64.dll
+C:\Users\김남기\source\repos\merge wire test\merge wire test\bin\Debug\net6.0\runtimes\win-x86\native\OpenCvSharpExtern.dll
+C:\Users\김남기\source\repos\merge wire test\merge wire test\bin\Debug\net6.0\runtimes\win-x86\native\opencv_videoio_ffmpeg470.dll
+C:\Users\김남기\source\repos\merge wire test\merge wire test\obj\Debug\net6.0\merge wire test.csproj.AssemblyReference.cache
+C:\Users\김남기\source\repos\merge wire test\merge wire test\obj\Debug\net6.0\merge wire test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\김남기\source\repos\merge wire test\merge wire test\obj\Debug\net6.0\merge wire test.AssemblyInfoInputs.cache
+C:\Users\김남기\source\repos\merge wire test\merge wire test\obj\Debug\net6.0\merge wire test.AssemblyInfo.cs
+C:\Users\김남기\source\repos\merge wire test\merge wire test\obj\Debug\net6.0\merge wire test.csproj.CoreCompileInputs.cache
+C:\Users\김남기\source\repos\merge wire test\merge wire test\obj\Debug\net6.0\merge wire test.csproj.CopyComplete
+C:\Users\김남기\source\repos\merge wire test\merge wire test\obj\Debug\net6.0\merge wire test.dll
+C:\Users\김남기\source\repos\merge wire test\merge wire test\obj\Debug\net6.0\refint\merge wire test.dll
+C:\Users\김남기\source\repos\merge wire test\merge wire test\obj\Debug\net6.0\merge wire test.pdb
+C:\Users\김남기\source\repos\merge wire test\merge wire test\obj\Debug\net6.0\merge wire test.genruntimeconfig.cache
+C:\Users\김남기\source\repos\merge wire test\merge wire test\obj\Debug\net6.0\ref\merge wire test.dll

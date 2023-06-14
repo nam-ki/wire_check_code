@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "/ye73S1DfZPGbTI4gNOpzwclpxX44zMmfSx25cLApvUojGGjNGxS2juF/GBPV4xwYLWNBUZCCLzW+jcqgkv39A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\김남기\\source\\repos\\merge wire test\\merge wire test\\merge wire test.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\김남기\\.nuget\\packages\\opencvsharp4\\4.7.0.20230115\\opencvsharp4.4.7.0.20230115.nupkg.sha512",
+    "C:\\Users\\김남기\\.nuget\\packages\\opencvsharp4.runtime.win\\4.7.0.20230115\\opencvsharp4.runtime.win.4.7.0.20230115.nupkg.sha512",
+    "C:\\Users\\김남기\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\김남기\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
