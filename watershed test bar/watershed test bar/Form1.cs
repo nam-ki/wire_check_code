@@ -34,6 +34,8 @@ namespace watershed_test_bar
             hScrollBar5.Maximum = 500;
             textBox5.Text = (0.001 * 1).ToString();
 
+            openFileDialog1.InitialDirectory = "D:\\과제\\삭도검사로봇\\삭도 코드\\wire_check_code\\wire_check_code\\watershed test bar\\watershed test bar";
+
         }
 
         Mat image;
@@ -55,6 +57,8 @@ namespace watershed_test_bar
         double maxVal;
         double thresholdValue;
 
+        string filePath;
+
         int kernel_size = 3;
         int opening_iteration = 1;
         int dilate_teration = 1; // 배경 추출
@@ -73,6 +77,8 @@ namespace watershed_test_bar
         {
 
             count = 0;
+
+            //openFileDialog1.InitialDirectory = "D:\\과제\\삭도검사로봇\\삭도 코드\\wire_check_code\\wire_check_code\\watershed test bar\\watershed test bar";
         }
 
         #endregion
@@ -87,7 +93,7 @@ namespace watershed_test_bar
 
         private async void button1_Click(object sender, EventArgs e)
         {
-            image = Cv2.ImRead("real_wire_test3.jpg");
+            image = Cv2.ImRead(filePath);
 
             //이미지 그레이 스케일 변화
             Cv2.CvtColor(image, gray_img, ColorConversionCodes.BGR2GRAY);
@@ -305,7 +311,7 @@ namespace watershed_test_bar
             return sure_bg_image;
         }
 
-        async Task<(Mat,Mat,Mat,Mat,Mat)> task4()
+        async Task<(Mat, Mat, Mat, Mat, Mat)> task4()
         {
             //거리변환
 
@@ -564,7 +570,7 @@ namespace watershed_test_bar
 
         private void hScrollBar5_Scroll(object sender, ScrollEventArgs e)
         {
-            textBox5.Text = (0.001*hScrollBar5.Value).ToString();
+            textBox5.Text = (0.001 * hScrollBar5.Value).ToString();
 
 
             thresholdvalue_percent = hScrollBar5.Value;
@@ -572,6 +578,21 @@ namespace watershed_test_bar
             count = 3;
 
             call_algorithm(sharpened_img);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //folder open file click
+
+            openFileDialog1.Multiselect = false;
+
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                //string fileName = Path.GetFileName(openFileDialog1.FileName);
+                filePath = openFileDialog1.FileName;
+                //image_path = filePath + "\\" + fileName;
+                MessageBox.Show(filePath);
+            }
         }
     }
 }

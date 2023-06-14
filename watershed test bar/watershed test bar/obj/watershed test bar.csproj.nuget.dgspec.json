@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\김남기\\source\\repos\\watershed test bar\\watershed test bar\\watershed test bar.csproj": {}
+    "D:\\과제\\삭도검사로봇\\삭도 코드\\wire_check_code\\wire_check_code\\watershed test bar\\watershed test bar\\watershed test bar.csproj": {}
   },
   "projects": {
-    "C:\\Users\\김남기\\source\\repos\\watershed test bar\\watershed test bar\\watershed test bar.csproj": {
+    "D:\\과제\\삭도검사로봇\\삭도 코드\\wire_check_code\\wire_check_code\\watershed test bar\\watershed test bar\\watershed test bar.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\김남기\\source\\repos\\watershed test bar\\watershed test bar\\watershed test bar.csproj",
+        "projectUniqueName": "D:\\과제\\삭도검사로봇\\삭도 코드\\wire_check_code\\wire_check_code\\watershed test bar\\watershed test bar\\watershed test bar.csproj",
         "projectName": "watershed test bar",
-        "projectPath": "C:\\Users\\김남기\\source\\repos\\watershed test bar\\watershed test bar\\watershed test bar.csproj",
-        "packagesPath": "C:\\Users\\김남기\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\김남기\\source\\repos\\watershed test bar\\watershed test bar\\obj\\",
+        "projectPath": "D:\\과제\\삭도검사로봇\\삭도 코드\\wire_check_code\\wire_check_code\\watershed test bar\\watershed test bar\\watershed test bar.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\과제\\삭도검사로봇\\삭도 코드\\wire_check_code\\wire_check_code\\watershed test bar\\watershed test bar\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\김남기\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
