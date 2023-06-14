@@ -1,0 +1,24 @@
+C:\Users\김남기\source\repos\watershed test bar\watershed test bar\bin\Debug\net6.0-windows\watershed test bar.exe
+C:\Users\김남기\source\repos\watershed test bar\watershed test bar\bin\Debug\net6.0-windows\watershed test bar.deps.json
+C:\Users\김남기\source\repos\watershed test bar\watershed test bar\bin\Debug\net6.0-windows\watershed test bar.runtimeconfig.json
+C:\Users\김남기\source\repos\watershed test bar\watershed test bar\bin\Debug\net6.0-windows\watershed test bar.dll
+C:\Users\김남기\source\repos\watershed test bar\watershed test bar\bin\Debug\net6.0-windows\watershed test bar.pdb
+C:\Users\김남기\source\repos\watershed test bar\watershed test bar\bin\Debug\net6.0-windows\OpenCvSharp.dll
+C:\Users\김남기\source\repos\watershed test bar\watershed test bar\bin\Debug\net6.0-windows\OpenCvSharp.Extensions.dll
+C:\Users\김남기\source\repos\watershed test bar\watershed test bar\bin\Debug\net6.0-windows\runtimes\win-x64\native\OpenCvSharpExtern.dll
+C:\Users\김남기\source\repos\watershed test bar\watershed test bar\bin\Debug\net6.0-windows\runtimes\win-x64\native\opencv_videoio_ffmpeg470_64.dll
+C:\Users\김남기\source\repos\watershed test bar\watershed test bar\bin\Debug\net6.0-windows\runtimes\win-x86\native\OpenCvSharpExtern.dll
+C:\Users\김남기\source\repos\watershed test bar\watershed test bar\bin\Debug\net6.0-windows\runtimes\win-x86\native\opencv_videoio_ffmpeg470.dll
+C:\Users\김남기\source\repos\watershed test bar\watershed test bar\obj\Debug\net6.0-windows\watershed test bar.csproj.AssemblyReference.cache
+C:\Users\김남기\source\repos\watershed test bar\watershed test bar\obj\Debug\net6.0-windows\watershed_test_bar.Form1.resources
+C:\Users\김남기\source\repos\watershed test bar\watershed test bar\obj\Debug\net6.0-windows\watershed test bar.csproj.GenerateResource.cache
+C:\Users\김남기\source\repos\watershed test bar\watershed test bar\obj\Debug\net6.0-windows\watershed test bar.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\김남기\source\repos\watershed test bar\watershed test bar\obj\Debug\net6.0-windows\watershed test bar.AssemblyInfoInputs.cache
+C:\Users\김남기\source\repos\watershed test bar\watershed test bar\obj\Debug\net6.0-windows\watershed test bar.AssemblyInfo.cs
+C:\Users\김남기\source\repos\watershed test bar\watershed test bar\obj\Debug\net6.0-windows\watershed test bar.csproj.CoreCompileInputs.cache
+C:\Users\김남기\source\repos\watershed test bar\watershed test bar\obj\Debug\net6.0-windows\watershed test bar.csproj.CopyComplete
+C:\Users\김남기\source\repos\watershed test bar\watershed test bar\obj\Debug\net6.0-windows\watershed test bar.dll
+C:\Users\김남기\source\repos\watershed test bar\watershed test bar\obj\Debug\net6.0-windows\refint\watershed test bar.dll
+C:\Users\김남기\source\repos\watershed test bar\watershed test bar\obj\Debug\net6.0-windows\watershed test bar.pdb
+C:\Users\김남기\source\repos\watershed test bar\watershed test bar\obj\Debug\net6.0-windows\watershed test bar.genruntimeconfig.cache
+C:\Users\김남기\source\repos\watershed test bar\watershed test bar\obj\Debug\net6.0-windows\ref\watershed test bar.dll
