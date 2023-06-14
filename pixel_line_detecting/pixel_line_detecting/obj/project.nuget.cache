@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "wLNPVMM2T/XA167KLCcbhtVxTPujsb6mj//mxAN9VW2oPOCvI0+BlHOgJlr8QHolzmb4V5DXY1wqMEpsbsVGHg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\김남기\\source\\repos\\pixel_line_detecting\\pixel_line_detecting\\pixel_line_detecting.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\김남기\\.nuget\\packages\\opencvsharp4\\4.7.0.20230115\\opencvsharp4.4.7.0.20230115.nupkg.sha512",
+    "C:\\Users\\김남기\\.nuget\\packages\\opencvsharp4.runtime.win\\4.7.0.20230115\\opencvsharp4.runtime.win.4.7.0.20230115.nupkg.sha512",
+    "C:\\Users\\김남기\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\김남기\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
