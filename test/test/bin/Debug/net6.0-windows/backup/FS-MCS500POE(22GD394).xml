@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CameraCalibration>
+  <CameraMatrix rows="3" cols="3">
+    <data><![CDATA[1101.7903668880363	0	272.76322091501186
+0	557.6623108288145	200.25120569064723
+0	0	1
+]]></data>
+  </CameraMatrix>
+  <distcoeffsMatrix rows="1" cols="5">
+    <data><![CDATA[0.47674309870707526	-5.499015321558612	0.04210689234793409	0.00957966307119303	10.404860364696539
+]]></data>
+  </distcoeffsMatrix>
+  <newcameramatrix rows="3" cols="3">
+    <data><![CDATA[1001.6605224609375	0	278.20238926194725
+0	511.9986267089844	210.20181351262454
+0	0	1
+]]></data>
+  </newcameramatrix>
+</CameraCalibration>

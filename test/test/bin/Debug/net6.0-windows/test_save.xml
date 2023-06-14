@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CameraCalibration>
+  <CameraMatrix rows="3" cols="3">
+    <data><![CDATA[1111	0	2222
+0	3333	4444
+0	0	1
+]]></data>
+  </CameraMatrix>
+  <distcoeffsMatrix rows="3" cols="3">
+    <data><![CDATA[0.1	0.2	0.3	0.4	0.5
+]]></data>
+  </distcoeffsMatrix>
+</CameraCalibration>

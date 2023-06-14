@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="OpenCvSharp4" Version="4.7.0.20230115" />
+    <PackageReference Include="OpenCvSharp4.Extensions" Version="4.7.0.20230115" />
+    <PackageReference Include="OpenCvSharp4.runtime.win" Version="4.7.0.20230115" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="GenApiDotNet40_v3_2">
+      <HintPath>..\..\..\..\..\..\Program Files\Common Files\OMRON_SENTECH\StApi\v1_1\GenApiDotNet40_v3_2.dll</HintPath>
+    </Reference>
+    <Reference Include="StApiDotNet40_v1_1">
+      <HintPath>..\..\..\..\..\..\Program Files\Common Files\OMRON_SENTECH\StApi\v1_1\StApiDotNet40_v1_1.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
