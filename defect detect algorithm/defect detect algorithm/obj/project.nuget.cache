@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "M4TsoZZSUAdBf2ukxqmXV58mvO0atApwp6QT2VuzPBVRT9iTK/N2uZ1jMnWTsiuHIoMrIx9dKmlgs+n21ItHnw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\김남기\\source\\repos\\defect detect algorithm\\defect detect algorithm\\defect detect algorithm.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\김남기\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "C:\\Users\\김남기\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
+    "C:\\Users\\김남기\\.nuget\\packages\\opencvsharp4\\4.7.0.20230115\\opencvsharp4.4.7.0.20230115.nupkg.sha512",
+    "C:\\Users\\김남기\\.nuget\\packages\\opencvsharp4.extensions\\4.7.0.20230115\\opencvsharp4.extensions.4.7.0.20230115.nupkg.sha512",
+    "C:\\Users\\김남기\\.nuget\\packages\\opencvsharp4.runtime.win\\4.7.0.20230115\\opencvsharp4.runtime.win.4.7.0.20230115.nupkg.sha512",
+    "C:\\Users\\김남기\\.nuget\\packages\\opencvsharp4.wpfextensions\\4.7.0.20230115\\opencvsharp4.wpfextensions.4.7.0.20230115.nupkg.sha512",
+    "C:\\Users\\김남기\\.nuget\\packages\\system.drawing.common\\5.0.3\\system.drawing.common.5.0.3.nupkg.sha512",
+    "C:\\Users\\김남기\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\김남기\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
