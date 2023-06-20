@@ -24,6 +24,7 @@ using System.Security.Cryptography.Xml;
 using System.Transactions;
 using System.Runtime.CompilerServices;
 using OpenCvSharp.Extensions;
+using OpenCvSharp.XFeatures2D;
 
 namespace image_check_bar
 {
@@ -39,6 +40,8 @@ namespace image_check_bar
         int canny_max;
         string image_path;
         string filePath;
+        int mopology_iteration = 1;
+        Mat image;
 
 
         public Form1()
@@ -57,6 +60,10 @@ namespace image_check_bar
             c_scr.Maximum = 500 + 9;
             canny_min_Scr.Maximum = 500 + 9;
             canny_max_scr.Maximum = 600 + 9;
+
+            mopology_iteration_value.Text = 1.ToString();
+            mopology_iteration_scr.Maximum = 10 + 9;
+            mopology_iteration_scr.Minimum = 1;
 
 
         }
@@ -83,7 +90,9 @@ namespace image_check_bar
 
         private void image_load_button_Click(object sender, EventArgs e)
         {
-            Mat image = Cv2.ImRead(filePath);
+            image = Cv2.ImRead(filePath);
+
+            pictureBox8.Image = BitmapConverter.ToBitmap(image);
 
             //이미지 처리 부분
             Rect roi = new Rect(300, 0, image.Width - 300, image.Height);
@@ -199,10 +208,68 @@ namespace image_check_bar
                 c = c_scr.Value;
                 Cv2.AdaptiveThreshold(binary_gray, binary, 255, AdaptiveThresholdTypes.MeanC, ThresholdTypes.Binary, blockSize: block_size, c: c);
                 pictureBox1.Image = BitmapConverter.ToBitmap(binary);
-
+                //Cv2.MorphologyEx(binary, binary, MorphTypes.Close, 5, iterations: 20);
+                Cv2.Erode(binary, binary, 5, iterations: 20);
                 Cv2.Canny(binary, edge, canny_min, canny_max);
-                Cv2.Dilate(edge, edge, 3, iterations: 1);
+                
+
                 pictureBox2.Image = BitmapConverter.ToBitmap(edge);
+
+                #region 윤곽선 그린 후 중심점 추출(진행중)
+                //윤곽선 그리기
+                OpenCvSharp.Point[][] contours;
+                HierarchyIndex[] hierarchy;
+                Cv2.FindContours(binary, out contours, out hierarchy, RetrievalModes.External, ContourApproximationModes.ApproxSimple);
+
+                // 검출된 윤곽선 그리기
+
+                Mat resultImage = Mat.Zeros(binary.Size(), MatType.CV_8UC3);
+                Cv2.DrawContours(resultImage, contours, -1, Scalar.Red, 2);
+
+                pictureBox6.Image = BitmapConverter.ToBitmap(resultImage);
+
+                Mat center_img = resultImage.Clone();
+
+
+                // 검출된 컨투어 중심점을 계산합니다.
+                var centers = new List<Point2f>();
+                foreach (var contour in contours)
+                {
+                    var moments = Cv2.Moments(contour);
+                    var center = new Point2f((float)(moments.M10 / moments.M00), (float)(moments.M01 / moments.M00));
+                    centers.Add(center);
+                }
+
+                foreach (var center in centers)
+                {
+                    Cv2.Circle(center_img, (int)center.X, (int)center.Y, 5, Scalar.Blue, -1);
+                }
+
+
+                pictureBox7.Image = BitmapConverter.ToBitmap(center_img);
+                #endregion
+
+                #region 특징점 추출
+
+                //var surf = SURF.Create(hessianThreshold: 400);
+
+                ////키 포인트와 디스크립터를 추출
+                //KeyPoint[] keyPoints;
+                //Mat descriptors = new Mat();
+
+                //surf.DetectAndCompute(binary, null, out keyPoints, descriptors);
+
+
+
+
+                ////특징점 출력
+                //Mat output = new Mat();
+                //Cv2.DrawKeypoints(edge, keyPoints, output);
+
+                //pictureBox7.Image = BitmapConverter.ToBitmap(output);
+
+                #endregion
+
             }
 
         }
@@ -232,7 +299,7 @@ namespace image_check_bar
             canny_max = canny_max_scr.Value;
 
             Cv2.Canny(binary, edge, canny_min, canny_max);
-            Cv2.Dilate(edge, edge, 3, iterations: 1);
+
             pictureBox2.Image = BitmapConverter.ToBitmap(edge);
         }
 
@@ -262,7 +329,14 @@ namespace image_check_bar
 
         private void mopology_iteration_scr_Scroll(object sender, ScrollEventArgs e)
         {
+            mopology_iteration_value.Text = mopology_iteration_scr.Value.ToString();
+            mopology_iteration = mopology_iteration_scr.Value;
 
+            Mat mopology_img = new Mat();
+            //dilate
+            Cv2.Dilate(binary, mopology_img, 3, iterations: mopology_iteration);
+
+            pictureBox5.Image = BitmapConverter.ToBitmap(mopology_img);
         }
     }
 }

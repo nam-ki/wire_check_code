@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Im6D9E9Y+wOXM0o9nV7ZUXSSkjXwRAuYUSmtp+sSSibQceZsDE0/SwNlInTgS7+6e4C3DzMj+B6MHTrIaZgSyg==",
+  "dgSpecHash": "wQ4G8cTpoLEmOQqIo7NMHZDFNk6du7bVLVeR2ad6pepSY2Dw9FZqQaU31/S6ZeSvKzLtzNwfydLSsqCxeW3EeA==",
   "success": true,
-  "projectFilePath": "E:\\회사\\삭도 코드\\image_check_bar\\image_check_bar\\image_check_bar.csproj",
+  "projectFilePath": "D:\\과제\\삭도검사로봇\\삭도 코드\\wire_check_code\\wire_check_code\\image_check_bar\\image_check_bar\\image_check_bar.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",

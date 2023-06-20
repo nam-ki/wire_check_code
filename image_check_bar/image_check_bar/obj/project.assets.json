@@ -357,11 +357,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\회사\\삭도 코드\\image_check_bar\\image_check_bar\\image_check_bar.csproj",
+      "projectUniqueName": "D:\\과제\\삭도검사로봇\\삭도 코드\\wire_check_code\\wire_check_code\\image_check_bar\\image_check_bar\\image_check_bar.csproj",
       "projectName": "image_check_bar",
-      "projectPath": "E:\\회사\\삭도 코드\\image_check_bar\\image_check_bar\\image_check_bar.csproj",
+      "projectPath": "D:\\과제\\삭도검사로봇\\삭도 코드\\wire_check_code\\wire_check_code\\image_check_bar\\image_check_bar\\image_check_bar.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "E:\\회사\\삭도 코드\\image_check_bar\\image_check_bar\\obj\\",
+      "outputPath": "D:\\과제\\삭도검사로봇\\삭도 코드\\wire_check_code\\wire_check_code\\image_check_bar\\image_check_bar\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

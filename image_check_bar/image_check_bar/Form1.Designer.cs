@@ -52,20 +52,24 @@
             mopology_iteration_scr = new HScrollBar();
             label5 = new Label();
             mopology_iteration_value = new TextBox();
+            pictureBox8 = new PictureBox();
+            pictureBox7 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(37, 41);
+            pictureBox1.Location = new Point(470, 65);
             pictureBox1.Margin = new Padding(2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(538, 248);
+            pictureBox1.Size = new Size(388, 162);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -187,10 +191,10 @@
             // 
             // pictureBox2
             // 
-            pictureBox2.Location = new Point(629, 41);
+            pictureBox2.Location = new Point(901, 65);
             pictureBox2.Margin = new Padding(2);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(538, 248);
+            pictureBox2.Size = new Size(388, 162);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 16;
             pictureBox2.TabStop = false;
@@ -213,10 +217,10 @@
             // 
             // pictureBox3
             // 
-            pictureBox3.Location = new Point(1268, 41);
+            pictureBox3.Location = new Point(1327, 65);
             pictureBox3.Margin = new Padding(2);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(538, 245);
+            pictureBox3.Size = new Size(388, 159);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 18;
             pictureBox3.TabStop = false;
@@ -226,27 +230,27 @@
             pictureBox4.Location = new Point(37, 402);
             pictureBox4.Margin = new Padding(2);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(538, 241);
+            pictureBox4.Size = new Size(388, 155);
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox4.TabIndex = 19;
             pictureBox4.TabStop = false;
             // 
             // pictureBox5
             // 
-            pictureBox5.Location = new Point(629, 402);
+            pictureBox5.Location = new Point(37, 593);
             pictureBox5.Margin = new Padding(2);
             pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(538, 241);
+            pictureBox5.Size = new Size(388, 155);
             pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox5.TabIndex = 20;
             pictureBox5.TabStop = false;
             // 
             // pictureBox6
             // 
-            pictureBox6.Location = new Point(1268, 402);
+            pictureBox6.Location = new Point(459, 239);
             pictureBox6.Margin = new Padding(2);
             pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(538, 241);
+            pictureBox6.Size = new Size(706, 392);
             pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox6.TabIndex = 21;
             pictureBox6.TabStop = false;
@@ -277,11 +281,33 @@
             mopology_iteration_value.Size = new Size(98, 23);
             mopology_iteration_value.TabIndex = 24;
             // 
+            // pictureBox8
+            // 
+            pictureBox8.Location = new Point(37, 65);
+            pictureBox8.Margin = new Padding(2);
+            pictureBox8.Name = "pictureBox8";
+            pictureBox8.Size = new Size(388, 162);
+            pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox8.TabIndex = 26;
+            pictureBox8.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            pictureBox7.Location = new Point(1188, 239);
+            pictureBox7.Margin = new Padding(2);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(585, 392);
+            pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox7.TabIndex = 25;
+            pictureBox7.TabStop = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(2184, 923);
+            Controls.Add(pictureBox8);
+            Controls.Add(pictureBox7);
             Controls.Add(mopology_iteration_value);
             Controls.Add(label5);
             Controls.Add(mopology_iteration_scr);
@@ -315,6 +341,8 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -345,5 +373,7 @@
         private HScrollBar mopology_iteration_scr;
         private Label label5;
         private TextBox mopology_iteration_value;
+        private PictureBox pictureBox8;
+        private PictureBox pictureBox7;
     }
 }
