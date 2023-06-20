@@ -15,10 +15,12 @@ namespace merge_test_program_keypoint
         List<string> list_file = new List<string>();
         Mat origin_image = new Mat();
         Mat origin_image2 = new Mat();
+        Mat origin_image3 = new Mat();
         int block_size = 3;
         int c_value = 0;
         Mat grayscale_img = new Mat();
         Mat grayscale_img2 = new Mat();
+        int surf_threshold = 0;
 
         KeyPoint[] keypoint1;
         Mat descriptors1 = new Mat();
@@ -36,6 +38,7 @@ namespace merge_test_program_keypoint
 
             blocksize_text.Text = 3.ToString();
             c_text.Text = 0.ToString();
+            surf_threshold_value.Text = 0.ToString();
 
             blocksize_scr.Maximum = 500;
             blocksize_scr.Minimum = 3;
@@ -43,6 +46,8 @@ namespace merge_test_program_keypoint
             c_scr.Maximum = 500;
             c_scr.Minimum = 0;
 
+            surf_threshold_scr.Maximum = 800;
+            surf_threshold_scr.Minimum = 0;
 
 
         }
@@ -98,6 +103,7 @@ namespace merge_test_program_keypoint
             keypoint_name2.Text = list_file[1].Replace(current_path, "").ToString();
             origin_image = Cv2.ImRead(list_file[0]);
             origin_image2 = Cv2.ImRead(list_file[1]);
+            origin_image3 = Cv2.ImRead(list_file[2]);
 
             //이미지 그레이 스케일 변환
 
@@ -117,6 +123,28 @@ namespace merge_test_program_keypoint
             await Task.Run(() => RANSAC(goodmatch_keypoint1, goodmatch_keypoint2));
             //shift_keypoint(grayscale_img);
 
+            Stitcher stitcher = Stitcher.Create();
+
+            // 입력 이미지 리스트 생성
+            List<Mat> images = new List<Mat> { origin_image, origin_image2,origin_image3 };
+
+            // 스티칭 수행
+            Mat resultImage = new Mat();
+
+            Stitcher.Status status = stitcher.Stitch(images, resultImage);
+
+
+            // 스티칭 성공 여부 확인
+            if (status == Stitcher.Status.OK)
+            {
+                // 결과 이미지 출력
+                pictureBox12.Image = BitmapConverter.ToBitmap(resultImage);
+            }
+            else
+            {
+                // 스티칭 실패 시 에러 메시지 출력
+                MessageBox.Show("Stitching failed: " + status);
+            }
 
 
         }
@@ -134,14 +162,15 @@ namespace merge_test_program_keypoint
             //var sift = SIFT.Create();
 
             //surt 알고리즘초기화
-            var surf = SURF.Create(hessianThreshold: 400);
+            //var surf = SURF.Create(hessianThreshold: 400);
+            var surf = SURF.Create(hessianThreshold: surf_threshold);
 
             //키 포인트와 디스크립터를 추출
             KeyPoint[] keyPoints;
             Mat descriptors = new Mat();
 
-            //surf.DetectAndCompute(binary_img, null, out keyPoints, descriptors);
-            surf.DetectAndCompute(gray_img, null, out keyPoints, descriptors);
+            surf.DetectAndCompute(binary_img, null, out keyPoints, descriptors);
+            //surf.DetectAndCompute(gray_img, null, out keyPoints, descriptors);
             //sift.DetectAndCompute(binary_img, null, out keyPoints, descriptors);
 
             //keyPoints = sift.Detect(binary_img);
@@ -174,14 +203,14 @@ namespace merge_test_program_keypoint
             //var sift = SIFT.Create();
 
             //surt 알고리즘초기화
-            var surf = SURF.Create(hessianThreshold: 400);
+            var surf = SURF.Create(hessianThreshold: surf_threshold);
 
             //키 포인트와 디스크립터를 추출
             KeyPoint[] keyPoints;
             Mat descriptors = new Mat();
 
-            //surf.DetectAndCompute(binary_img, null, out keyPoints, descriptors);
-            surf.DetectAndCompute(gray_img, null, out keyPoints, descriptors);
+            surf.DetectAndCompute(binary_img, null, out keyPoints, descriptors);
+            //surf.DetectAndCompute(gray_img, null, out keyPoints, descriptors);
             //sift.DetectAndCompute(binary_img, null, out keyPoints, descriptors);
 
             //keyPoints = sift.Detect(binary_img);
@@ -217,7 +246,7 @@ namespace merge_test_program_keypoint
                 (goodmatch_keypoint1, goodmatch_keypoint2) = await Task.Run(() => keypoint_matching(descriptors1, descriptors2, keypoint1, keypoint2));
                 //Task.Run(() => shift_keypoint2(grayscale_img2));
                 //await Task.Run(() => keypoint_matching(descriptors1, descriptors2, keypoint1, keypoint2));
-                (goodmatch_keypoint1, goodmatch_keypoint2) = await Task.Run(() => keypoint_matching(descriptors1, descriptors2, keypoint1, keypoint2));
+                //(goodmatch_keypoint1, goodmatch_keypoint2) = await Task.Run(() => keypoint_matching(descriptors1, descriptors2, keypoint1, keypoint2));
 
                 await Task.Run(() => RANSAC(goodmatch_keypoint1, goodmatch_keypoint2));
             }
@@ -233,7 +262,7 @@ namespace merge_test_program_keypoint
             //Task.Run(() => shift_keypoint(grayscale_img));
             //Task.Run(() => shift_keypoint2(grayscale_img2));
             //await Task.Run(() => keypoint_matching(descriptors1, descriptors2, keypoint1, keypoint2));
-            (goodmatch_keypoint1, goodmatch_keypoint2) = await Task.Run(() => keypoint_matching(descriptors1, descriptors2, keypoint1, keypoint2));
+            //(goodmatch_keypoint1, goodmatch_keypoint2) = await Task.Run(() => keypoint_matching(descriptors1, descriptors2, keypoint1, keypoint2));
 
             await Task.Run(() => RANSAC(goodmatch_keypoint1, goodmatch_keypoint2));
         }
@@ -285,7 +314,7 @@ namespace merge_test_program_keypoint
                 //좋은 매칭 선별(match의 distance 값이 적을수록 matching이 잘 된 것)
                 //min의 값의 3배 또는 good_matches.size() > 60까지만 goodmatch로 인정.
                 List<DMatch> good_matches = new List<DMatch>();
-                int distance = 15; //10
+                int distance = 5; //10
                 do
                 {
                     List<DMatch> good_matches2 = new List<DMatch>();
@@ -310,11 +339,19 @@ namespace merge_test_program_keypoint
                 //drawing the results
                 var imagematches = new Mat();
 
+                Mat combinedimage = new Mat();
+
+                Cv2.VConcat(new Mat[] { origin_image, origin_image2 }, combinedimage);
+
                 //Cv2.DrawMatches(origin_image, key1, origin_image2, key2, matches, imagematches);
 
                 Cv2.DrawMatches(origin_image, key1, origin_image2, key2, good_matches.ToArray(), imagematches, Scalar.All(-1), Scalar.All(-1), null, DrawMatchesFlags.NotDrawSinglePoints);
 
+
+
                 pictureBox9.Image = BitmapConverter.ToBitmap(imagematches);
+
+
 
                 //GOODMATCH에서의 keypoint를 저장.
                 List<Point2f> goodmatch_key1 = new List<Point2f>();
@@ -362,7 +399,7 @@ namespace merge_test_program_keypoint
                 var matPanorama = matResult.Clone();
                 var matROI = new Mat(matPanorama, new Rect(0, 0, origin_image.Cols, origin_image.Rows));
                 Mat first_image = origin_image.Clone();
-                
+
                 first_image.CopyTo(matROI);
 
                 pictureBox11.Image = BitmapConverter.ToBitmap(matPanorama);
@@ -372,5 +409,17 @@ namespace merge_test_program_keypoint
 
         }
 
+        //surf 특징점 추출 알고리즘 threshold 조절
+        async private void surf_threshold_scr_Scroll(object sender, ScrollEventArgs e)
+        {
+            surf_threshold_value.Text = surf_threshold_scr.Value.ToString();
+
+            surf_threshold = surf_threshold_scr.Value;
+
+            (keypoint1, descriptors1) = await Task.Run(() => shift_keypoint(grayscale_img));
+            (keypoint2, descriptors2) = await Task.Run(() => shift_keypoint2(grayscale_img2));
+            (goodmatch_keypoint1, goodmatch_keypoint2) = await Task.Run(() => keypoint_matching(descriptors1, descriptors2, keypoint1, keypoint2));
+            await Task.Run(() => RANSAC(goodmatch_keypoint1, goodmatch_keypoint2));
+        }
     }
 }

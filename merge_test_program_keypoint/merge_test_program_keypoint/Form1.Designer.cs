@@ -61,6 +61,10 @@
             pictureBox10 = new PictureBox();
             label13 = new Label();
             pictureBox11 = new PictureBox();
+            pictureBox12 = new PictureBox();
+            label14 = new Label();
+            surf_threshold_scr = new HScrollBar();
+            surf_threshold_value = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -72,6 +76,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -103,7 +108,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(1473, 38);
+            button1.Location = new Point(1817, 73);
             button1.Name = "button1";
             button1.Size = new Size(187, 49);
             button1.TabIndex = 3;
@@ -113,7 +118,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(1687, 38);
+            button2.Location = new Point(2031, 73);
             button2.Name = "button2";
             button2.Size = new Size(187, 49);
             button2.TabIndex = 4;
@@ -123,7 +128,7 @@
             // 
             // blocksize_scr
             // 
-            blocksize_scr.Location = new Point(1478, 126);
+            blocksize_scr.Location = new Point(1822, 161);
             blocksize_scr.Name = "blocksize_scr";
             blocksize_scr.Size = new Size(311, 24);
             blocksize_scr.TabIndex = 5;
@@ -132,7 +137,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(1478, 99);
+            label1.Location = new Point(1822, 134);
             label1.Name = "label1";
             label1.Size = new Size(56, 15);
             label1.TabIndex = 6;
@@ -140,14 +145,14 @@
             // 
             // blocksize_text
             // 
-            blocksize_text.Location = new Point(1792, 126);
+            blocksize_text.Location = new Point(2136, 161);
             blocksize_text.Name = "blocksize_text";
             blocksize_text.Size = new Size(100, 23);
             blocksize_text.TabIndex = 7;
             // 
             // c_text
             // 
-            c_text.Location = new Point(1792, 199);
+            c_text.Location = new Point(2136, 234);
             c_text.Name = "c_text";
             c_text.Size = new Size(100, 23);
             c_text.TabIndex = 10;
@@ -155,7 +160,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(1478, 172);
+            label2.Location = new Point(1822, 207);
             label2.Name = "label2";
             label2.Size = new Size(13, 15);
             label2.TabIndex = 9;
@@ -163,7 +168,7 @@
             // 
             // c_scr
             // 
-            c_scr.Location = new Point(1478, 199);
+            c_scr.Location = new Point(1822, 234);
             c_scr.Name = "c_scr";
             c_scr.Size = new Size(311, 24);
             c_scr.TabIndex = 8;
@@ -358,11 +363,48 @@
             pictureBox11.TabIndex = 31;
             pictureBox11.TabStop = false;
             // 
+            // pictureBox12
+            // 
+            pictureBox12.Location = new Point(1439, 29);
+            pictureBox12.Name = "pictureBox12";
+            pictureBox12.Size = new Size(380, 287);
+            pictureBox12.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox12.TabIndex = 33;
+            pictureBox12.TabStop = false;
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Location = new Point(1822, 269);
+            label14.Name = "label14";
+            label14.Size = new Size(82, 15);
+            label14.TabIndex = 35;
+            label14.Text = "surf_threshold";
+            // 
+            // surf_threshold_scr
+            // 
+            surf_threshold_scr.Location = new Point(1822, 296);
+            surf_threshold_scr.Name = "surf_threshold_scr";
+            surf_threshold_scr.Size = new Size(311, 24);
+            surf_threshold_scr.TabIndex = 34;
+            surf_threshold_scr.Scroll += surf_threshold_scr_Scroll;
+            // 
+            // surf_threshold_value
+            // 
+            surf_threshold_value.Location = new Point(2136, 293);
+            surf_threshold_value.Name = "surf_threshold_value";
+            surf_threshold_value.Size = new Size(100, 23);
+            surf_threshold_value.TabIndex = 36;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1904, 1041);
+            ClientSize = new Size(2253, 1041);
+            Controls.Add(surf_threshold_value);
+            Controls.Add(label14);
+            Controls.Add(surf_threshold_scr);
+            Controls.Add(pictureBox12);
             Controls.Add(label13);
             Controls.Add(pictureBox11);
             Controls.Add(label12);
@@ -408,6 +450,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -447,5 +490,9 @@
         private PictureBox pictureBox10;
         private Label label13;
         private PictureBox pictureBox11;
+        private PictureBox pictureBox12;
+        private Label label14;
+        private HScrollBar surf_threshold_scr;
+        private TextBox surf_threshold_value;
     }
 }
