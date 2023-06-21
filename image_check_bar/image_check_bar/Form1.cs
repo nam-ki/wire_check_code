@@ -231,22 +231,50 @@ namespace image_check_bar
                 Mat center_img = resultImage.Clone();
 
 
+                //// 검출된 컨투어 중심점을 계산합니다.
+                //var centers = new List<Point2f>();
+                //foreach (var contour in contours)
+                //{
+                //    var moments = Cv2.Moments(contour);
+                //    var center = new Point2f((float)(moments.M10 / moments.M00), (float)(moments.M01 / moments.M00));
+                //    centers.Add(center);
+                //}
+
+                //foreach (var center in centers)
+                //{
+                //    Cv2.Circle(center_img, (int)center.X, (int)center.Y, 5, Scalar.Blue, -1);
+                //}
+
                 // 검출된 컨투어 중심점을 계산합니다.
                 var centers = new List<Point2f>();
                 foreach (var contour in contours)
                 {
                     var moments = Cv2.Moments(contour);
-                    var center = new Point2f((float)(moments.M10 / moments.M00), (float)(moments.M01 / moments.M00));
-                    centers.Add(center);
+
+                    // 면적을 계산합니다.
+                    var area = moments.M00;
+
+                    // 유효한 면적 범위를 설정합니다.
+                    var minArea = 1000; // 최소 면적 값
+                    var maxArea = 100000000; // 최대 면적 값
+
+                    if (area >= minArea && area <= maxArea)
+                    {
+                        
+                        // 면적이 유효한 범위 내에 있는 경우에만 중심점 계산 및 저장합니다.
+                        var center = new Point2f((float)(moments.M10 / moments.M00), (float)(moments.M01 / moments.M00));
+                        centers.Add(center);
+                    }
                 }
 
+                // 결과를 확인하거나 처리할 수 있습니다.
                 foreach (var center in centers)
                 {
                     Cv2.Circle(center_img, (int)center.X, (int)center.Y, 5, Scalar.Blue, -1);
                 }
+            
 
-
-                pictureBox7.Image = BitmapConverter.ToBitmap(center_img);
+            pictureBox7.Image = BitmapConverter.ToBitmap(center_img);
                 #endregion
 
                 #region 특징점 추출
@@ -334,7 +362,8 @@ namespace image_check_bar
 
             Mat mopology_img = new Mat();
             //dilate
-            Cv2.Dilate(binary, mopology_img, 3, iterations: mopology_iteration);
+            //Cv2.Dilate(binary, mopology_img, 3, iterations: mopology_iteration);
+            Cv2.MorphologyEx(binary, mopology_img, MorphTypes.Open,3, iterations: mopology_iteration);
 
             pictureBox5.Image = BitmapConverter.ToBitmap(mopology_img);
         }
